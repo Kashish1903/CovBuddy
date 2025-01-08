@@ -1,0 +1,50 @@
+<?php include('connect.php') ?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+	<header>
+
+		<a href="#" class="logo">C<span class="fas fa-virus"></span>VBUDDY</a>
+		<nav class="navbar">
+			<ul>
+				<li><a class="active" href="#home">home</a></li>
+				<li><a href="#protect">protect</a></li>
+				<li><a href="#symtoms">symtoms</a></li>
+				<li><a href="#prevent">prevent</a></li>
+				<li><a href="#spread">spread</a></li>
+			</ul>
+		</nav>
+	
+	</header>
+  <div class="wrapper">
+  <div class="form-box login">
+	<h1><center>LOGIN</center></h1><br>
+  <form method="post" action="login.php">
+  	
+  	<div class="input-group">
+  		<label>Username</label>
+  		<input type="text" name="username" style="border:2px inset orangered " required /><br>
+  	</div>
+	<br>
+  	<div class="input-group">
+  		<label>Password</label>
+  		<input type="password" name="password" style="border:2px inset orangered " minlength='8' maxlength='8' required />
+  	</div><br><br>
+  	<div class="input-group">
+      <a>
+            <button id="Submit" formaction="Fir.html">Submit</button>
+      </a>
+  	</div><br><br>
+  	<p>
+  		Not yet a member? <a href="registration.html">Sign up</a>
+  	</p>
+  </div> 
+</div> 
+  </form>
+</body>
+</html>

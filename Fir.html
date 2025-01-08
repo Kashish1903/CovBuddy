@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FIR</title>
+        <link rel="stylesheet" href="fir.css">
+    </head>
+    <body>
+    <fieldset>
+    <h1><center>WELCOME TO FIR</center></h1>
+    </fieldset>
+    <div class="image">
+    <img src="C:\Users\Kashish\Projects\COVBUDDY\covid_new-removebg-preview.png" alt="COVID-19">
+    </div>
+     <h3> Q1.Are you vaccinated? </h3>
+     <input type="radio" name="Q1" id="inc1">Yes<br>
+     <input type="radio" name="Q1">No<br>
+     
+     <h3>Q2.Do you have fever?</h3>
+     <input type="radio" name="Q2" id="inc2">Yes<br>
+     <input type="radio" name="Q2">No<br>
+     
+     <h3>  Q3.Do you have cold or dry cough?</h3>
+     <input type="radio" name="Q3" id="inc3">Yes<br>
+     <input type="radio" name="Q3">No<br>
+     
+     <h3>  Q4.Are you experiencing a loss of taste or smell?</h3>
+     <input type="radio" name="Q4" id="inc4">Yes<br>
+     <input type="radio" name="Q4">No<br>
+     
+     <h3>  Q5.Do you have any issues in breathing?</h3>
+     <input type="radio" name="Q5" id="inc5">Yes<br>
+     <input type="radio" name="Q5">No<br>   
+    
+     <button id="Submit" onclick="result()">Submit</button>
+     <script type="text/javascript">
+        function result(){
+            var score=0
+            if(document.getElementById('inc1').checked) 
+            {
+                score++;
+            }
+            if(document.getElementById('inc2').checked) 
+            {
+                score++;
+            }
+            if(document.getElementById('inc3').checked) 
+            {
+                score++;
+            }
+            if(document.getElementById('inc4').checked) 
+            {
+                score++;
+            }
+            if(document.getElementById('inc5').checked) 
+            {
+                score++;
+            }
+            if(score==1)
+            {
+                alert("No need to worry,you are safe")
+            }
+            if(score==2)
+            {
+                alert("Nothing to worry about,you are alright")
+            }
+            if(score==3)
+            {
+                alert("You can take some normal medications and take rest at home")
+            }
+            if(score==4)
+            {
+                alert("You have some symptoms,try to keep yourself quarantine for 2-3 days with some regular medications")
+            }
+            if(score==5)
+            {
+                alert("You are at high risk,take a test as soon as possible")
+            }
+
+        }
+
+     </script>
+    </body>
+</html>

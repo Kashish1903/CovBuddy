@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="registration.css">
+    
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo">C<span class="fas fa-virus"></span>VBUDDY</a>
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#home">home</a></li>
+            <li><a href="#protect">protect</a></li>
+            <li><a href="#symtoms">symtoms</a></li>
+            <li><a href="#prevent">prevent</a></li>
+            <li><a href="#spread">spread</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<div class="wrapper">
+    <div class="form-box login">
+        <h1><center>REGISTER YOURSELF</center></h1><br>
+        <form action="connect.php" id="register" method="post">
+            
+            <label><b>Username:</b></label>
+            <br>
+            <input type="text" name="username" id="name" placeholder="Enter the username" style="border:2px inset orangered " required />
+            <br><br>
+            <label><b>Your Age:</b></label>
+            <br>
+            <input type="number" name="age" id="name" placeholder="Enter your age" style="border:2px inset orangered ">
+            <br><br>
+            <label><b>Email:</b></label>
+            <br>
+            <input type="text" name="email" id="name" placeholder="Enter your valid email id" style="border:2px inset orangered " required />
+            <br><br>
+            <label><b>Gender:</b></label>
+            <br>
+            <input type="radio" name="gender" id="name">Male<br>
+            <input type="radio" name="gender" id="name">Female<br>
+            <br>
+            <label><b>Enter Password</b></label><br>
+            <input type="password" name="password_1" id="name" style="border:2px inset orangered "  minlength='8' maxlength='8' required /><br>
+            <br>
+            <label><b>Confirm Password</b></label><br>
+            <input type="password" name="password_2" id="name" style="border:2px inset orangered " minlength='8' maxlength='8' required /><br>
+            <span id='message'></span>
+            <br>
+            <a>
+            <button id="Submit" formaction="login.html">Submit</button>
+            </a>
+            <br><br>
+            <p><center>
+                          Already a member? <a href="login.html">Sign in</a>
+            </p></center>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>
